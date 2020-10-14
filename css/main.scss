@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #f36e01;
+    background-blend-mode: soft-light;
+    background-image: url('../images/Favicon.png');
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+button {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .06em;
+    background: rgb(249, 124, 22);
+    border: none;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        transition: 0.2s ease-in;
+        background: rgb(250, 212, 181);
+        color: #ff7300;
+    }
+}
+
+.projects-overlay,
+.about-overlay,
+.workex-overlay,
+.info-overlay,
+.skills-overlay,
+.contact-overlay {
+    clip-path: circle(0%);
+    position: fixed;
+    background: rgba(225, 225, 225, 0.9);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2em;
+    .exit {
+        position: absolute;
+        right: 2em;
+        top: 2em;
+        &:hover {
+            transition: 75ms ease-in;
+            opacity: 0.6;
+        }
+    }
+}
+
+input {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid #ff7300;
+}
+
+textarea[name=message] {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid #ff7300;
+    resize: vertical;
+}
+
+.infoOvr {
+    display: none;
+}
+
+.transition {
+    transition: 0.2s ease-in-out;
+}
+
+.menu,
+.menu-about,
+.menu-workex,
+.menu-skills,
+.menu-contact {
+    font-family: 'Nunito Sans', sans-serif;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.menu-container {
+    display: grid;
+    opacity: 0;
+    transform: translateY(-30px);
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: .8em 2em .8em 1em;
+        font-size: 1em;
+        &:hover {
+            transition: 0.2s ease-in;
+            background: rgb(250, 212, 181);
+            color: #ff7300;
+            .person {
+                transition: 0.2s ease-in;
+                color: #d15e00;
+            }
+            .game {
+                transition: 0.2s ease-in;
+                color: #cc1f00;
+            }
+        }
+    }
+}
+
+p.category {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #ff7300;
+    margin-left: .8em;
+}
+
+.exit img {
+    width: 24px;
+    height: 24px;
+}
+
+.navBtns {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navBtns li {
+    text-align: center;
+    padding: 1em;
+}
+
+.person {
+    color: #ffa600
+}
+
+.game {
+    color: #df2605;
+}
+
+.date {
+    color: #ff7300;
+}
+
+.headerText {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6em;
+}
+
+.footerText {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: .8em;
+}
+
+// About Container
+.portfolioImg {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bl {
+    color: #ff7300;
+}
+
+.mb {
+    margin-bottom: 5em;
+}
+
+.mt {
+    margin-top: 2em;
+}
