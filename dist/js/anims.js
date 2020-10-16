@@ -27,7 +27,7 @@ const infoBtnD = document.querySelector('#infobtnD');
 // Timeline for Project Container Animation
 var tl = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } }, "-=1")
 tl.paused(true);
-tl.to(".projects-overlay",{clipPath: 'circle(100%)'})
+tl.to(".projects-overlay", { display: 'block',clipPath: 'circle(100%)'})
 tl.to(".menu-container", {opacity: 1, y: '30px', stagger: 0.1}, "-=1")
 pbtn.addEventListener('click', () => {
     tl.play();
@@ -39,7 +39,7 @@ eProj.addEventListener('click', () => {
 // Timeline for About Container Animation
 var tlAbout = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } }, "-=1.25")
 tlAbout.paused(true);
-tlAbout.to(".about-overlay", { clipPath: 'circle(100%)' })
+tlAbout.to(".about-overlay", { display: 'block', clipPath: 'circle(100%)' })
 tlAbout.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1 }, "-=1.25")
 abtn.addEventListener('click', () => {
     tlAbout.play();
@@ -51,7 +51,7 @@ eAbout.addEventListener('click', () => {
 // Timeline for Work Experience Container Animation
 var tlWorkex = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } }, "-=1")
 tlWorkex.paused(true);
-tlWorkex.to(".workex-overlay", { clipPath: 'circle(100%)' })
+tlWorkex.to(".workex-overlay", { display: 'block', clipPath: 'circle(100%)' })
 tlWorkex.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1 }, "-=1.5")
 wbtn.addEventListener('click', () => {
     tlWorkex.play();
@@ -63,8 +63,8 @@ eWorkEx.addEventListener('click', () => {
 // Timeline for Skills Container Animation
 var tlSkills = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } }, "-=1")
 tlSkills.paused(true);
-tlSkills.to(".skills-overlay", { clipPath: 'circle(100%)' })
-tlSkills.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1 }, "-=2")
+tlSkills.to(".skills-overlay", { display: 'block', clipPath: 'circle(100%)' })
+tlSkills.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1}, "-=2")
 sbtn.addEventListener('click', () => {
     tlSkills.play();
 })
@@ -91,8 +91,8 @@ infoBtnD.addEventListener('click', () => {
 // Timeline for Contact Container Animation
 var tlContact = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } }, "-=.25")
 tlContact.paused(true);
-tlContact.to(".contact-overlay", { clipPath: 'circle(100%)' })
-tlContact.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1 }, "-=3")
+tlContact.to(".contact-overlay", { display: 'block', clipPath: 'circle(100%)' })
+tlContact.to(".menu-container", { opacity: 1, y: '30px', stagger: 0.1}, "-=3")
 cbtn.addEventListener('click', () => {
     tlContact.play();
 })
