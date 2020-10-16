@@ -97,5 +97,5 @@ cbtn.addEventListener('click', () => {
     tlContact.play();
 })
 eContact.addEventListener('click', () => {
-    tlContact.reverse("-=1.5");
+    tlContact.reverse("-=1");
 })
