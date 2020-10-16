@@ -1,0 +1,13 @@
+{
+    "homepage": "https://othewebdev.github.io/gsapport",
+    "name": "fullnav-gsap3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
